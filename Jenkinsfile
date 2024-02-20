@@ -32,7 +32,7 @@ pipeline {
                   sh '''
                   roslaunch publisher_example stop.launch &
                   STOP_ID=$!
-                    sleep 5s
+                    sleep 10s
                     kill $STOP_ID
                   '''
               }
